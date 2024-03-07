@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <label for="">Mark</label>
+   <input type="text" id="mark"> <br>
+   <input type="submit" value="check" onclick="findResult()"> 
+   <p id="result">Garde</p>
+
+   <script>
+    function findResult(){
+        let userInpurt=document.getElementById("mark").value;
+        let grade="";
+
+        if (userInpurt<= 32){
+            grade="F";
+        }
+        else if (userInpurt<= 39){
+            garde="D";
+        }
+        else if (userInpurt<= 49){
+            garde="C";
+        }
+        else if (userInpurt<= 59){
+            garde="B";
+        }
+        else if (userInpurt<= 69){
+            garde="A-";
+        }
+        else if (userInpurt<= 79){
+            garde="A";
+        }
+        else if (userInpurt<= 100){
+            garde="A+";
+        }
+        
+        else{
+            alert ("invalide Numbar");
+
+        }
+        document.getElementById("result").innerHTML=grade
+    }
+   </script>
+</body>
+</html>

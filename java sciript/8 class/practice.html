@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myAr=[50,34,27,38,35,89,43,79,43,89,100,122,334,135]
+        document.write("Old"+ myAr);
+        for(let first=0;first<myAr;first++){
+            
+            for(let second=0; second<myAr.length-second-1;second++){
+                if(myAr[second]>myAr[second+1]){
+                    let temp=myAr[second]
+                    myAr[second]=myAr[second+1]
+                    myAr[second+1]=temp
+
+                }
+                
+            }
+        }
+        document.write("<br>"+ "new"+myAr)
+    </script>
+</body>
+</html>

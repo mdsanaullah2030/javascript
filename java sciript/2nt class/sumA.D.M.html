@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">number1</label>
+    <input type="number" id="number1"> <br>
+    <label for="">number2</label>
+    <input type="number" id="number2"> <br>
+    <input type="submit" value="sum" onclick="doSum()">
+    <input type="submit" value="Subtraction" onclick="doSubtraction()">
+    <input type="submit" value="Multiplication" onclick="doMultiplication()">
+    <input type="submit" value="Division" onclick="doDivision()">
+    <input type="button" value=" change color" onclick="document.bgColor='tomato'" onmouseleave=" document.bgColor='geen'" onmousedown="document.bgColor 'read'">
+
+    <script>
+        function doSum() {
+            let number1 = document.getElementById('number1').value;
+            let number2 = document.getElementById('number2').value;
+
+            let nu1ToInt = parseFloat(number1);
+            let nu2ToInt = parseFloat(number2);
+
+            let result = nu1ToInt + nu2ToInt;
+            document.write(result);
+
+        }
+    </script>
+
+<!-- 
+Subtraction -->
+<script>
+    function doSubtraction() {
+        let number1 = document.getElementById('number1').value;
+        let number2 = document.getElementById('number2').value;
+
+        let nu1ToInt = parseFloat(number1);
+        let nu2ToInt = parseFloat(number2);
+
+        let result = nu1ToInt-nu2ToInt;
+        document.write(result);
+
+    }
+</script>
+
+    <!-- // Multiplication -->
+
+    <script>
+        function doMultiplication() {
+            let number1 = document.getElementById('number1').value;
+            let number2 = document.getElementById('number2').value;
+
+            let nu1ToInt = parseFloat(number1);
+            let nu2ToInt = parseFloat(number2);
+
+            let result = nu1ToInt*nu2ToInt;
+            document.write(result);
+
+        }
+    </script>
+
+    <!-- // Division -->
+    
+    <script>
+        function doDivision() {
+            let number1 = document.getElementById('number1').value;
+            let number2 = document.getElementById('number2').value;
+
+            let nu1ToInt = parseFloat(number1);
+            let nu2ToInt = parseFloat(number2);
+
+            let result = nu1ToInt/nu2ToInt;
+            document.write(result);
+
+        }
+    </script>
+
+    
+
+
+
+
+
+    
+
+
+</body>
+
+</html>

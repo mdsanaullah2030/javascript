@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Grade</label> 
+    <input type="text" id="Mark"><br>
+    <input type="submit" value="check" onclick="findResult">
+    <p id="result">result</p>
+    <script>
+        function findResult() {
+            let userInpurt = document.getElementById("Mark").value;
+            let grate="";
+            if ( userInpurt<=32){
+                grate="F";
+            }
+            else if( userInpurt<=39){
+                grate="D";
+            }
+            else if( userInpurt<=49){
+                grate="C";
+            }
+            else if(userInpurt<=59){
+                grate="B";
+            }
+            else if(userInpurt<=69){
+                grate="A-";
+            }
+            else if (userInpurt<=79){
+                grate="A";
+            }
+            else if (userInpurt){
+                grate="A+";
+            }
+        }
+document. getElementById('result').innerHTML=grate
+    </script>
+</body>
+
+</html>
