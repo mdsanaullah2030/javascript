@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="number"> <br> <br>
+    <input type="submit" value="submit" onclick="doResult()">  
+
+    <script>
+        function doResult() {
+            let userInput = document.getElementById('number').value;
+            if (userInput <= 32) {
+                alert("Failed");
+
+            } 
+
+           else {
+                alert("Passed");
+            }
+        }
+    </script>
+</body>
+</html>

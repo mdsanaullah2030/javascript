@@ -7,20 +7,22 @@
 </head>
 <body>
     <script>
-        let num1 = parseInt(prompt("inter first Number"));
-        let num2 = parseInt(prompt("inter Second Number"));
-        let num3 = parseInt(prompt("inter third Number"));
-        let minNumber=0;
-        if( num1< num2 && num1<num3){
-            minNumber =num1
+        let num1=parseInt(prompt("please enter 1st Number"));
+        let num2=parseInt(prompt("please enter 2nt Number"));
+        let num3=parseInt(prompt("please enter 3rd Number"));
+        minnumber=0;
+        if(num1<num2 && num1<num3){
+            minnumber=num1
+
         }
-        else if ( num2< num1 && num2<num3){
-            minNumber =num2
+        if(num2<num1 && num2<num3){
+            minnumber=num2;
+
         }
         else{
-            minNumber=num3
+            minnumber=num3
         }
-        document.write(minNumber)
+        document.write(minnumber)
     </script>
 </body>
 </html>

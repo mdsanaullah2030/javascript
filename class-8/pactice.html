@@ -7,12 +7,24 @@
 </head>
 <body>
    <script>
-    let nyAr=[20,40,30,50,80]
-  for(let first=0; first<myar.le ){
-
-  }
-
+    // Define an array of numbers
+    let myAr = [50, 34, 56, 23, 25, 78, 90, 87,67];
     
+    // Print the original array
+    document.write("old " + myAr);
+   for(first=0;first<myAr.length;first++){
+    for(sceond=0;sceond<myAr.length-first-1;sceond++){
+      if(myAr[sceond]>myAr[sceond+1]){
+        let temp= myAr[sceond]
+        myAr[sceond]=myAr[sceond+1]
+        myAr[sceond+1]=temp
+      }
+
+    }
+
+   }
+
+    document.write("<br>New " + myAr);
    </script> 
 </body>
 </html>

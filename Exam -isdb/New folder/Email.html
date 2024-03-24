@@ -7,14 +7,15 @@
 </head>
 <body>
     <script>
-        let userInput=prompt("enter number")  
-       let factorial=1;
-       for(i=userInput;i>=1;i--){
-        factorial*=i
+        let email=prompt("enter number")
+        const pattan=/^\S+@\S+\.\S+$/;
+        if(pattan.test(email)){
+            alert("it is right email")
 
-       }
-       document.write(factorial)
-
+        }
+        else{
+            alert("worng email")
+        }
     </script>
 </body>
 </html>
