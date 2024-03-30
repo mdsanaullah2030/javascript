@@ -6,22 +6,48 @@
     <title>Document</title>
 </head>
 <body>
-    number1
-    <input type="text" id="number1"> <br> <br>
-    number2
-    <input type="text" id="number2"> <br> <br>
+    Number1
+    <input type="text" id="number1"><br>
+    Number2
+    <input type="text" id="number2"><br>
     <input type="submit" value="sum" onclick="dosum()">
+    <input type="submit" value="sub" onclick="dosub()">
+    <input type="submit" value="mul" onclick="domul()">
+    <input type="submit" value="div" onclick="dodiv()">
+    <!-- <p id="histoy"></p> -->
     <script>
-        function dosum(){
-            let number1=document.getElementById('number1').value;
-            let number2=document.getElementById('number2').value;
-            let num1top=parseFloat(number1);
-            let num2top=parseFloat(number2);
-            let result=num1top+num2top
-            document.write(result)
-
-        }
+        function dosum(){ 
+        let number1=document.getElementById('number1').value;
+        let number2=document.getElementById('number2').value;
+        let nu1TInt=parseFloat(number1);
+        let nu2TInt=parseFloat(number2);
+        let result=nu1TInt+nu2TInt;
+        document.write(result)
+    }
+    function dosub(){ 
+        let number1=document.getElementById('number1').value;
+        let number2=document.getElementById('number2').value;
+        let nu1TInt=parseFloat(number1);
+        let nu2TInt=parseFloat(number2);
+        let result=nu1TInt-nu2TInt;
+        document.write(result)
+    }
+    function domul(){ 
+        let number1=document.getElementById('number1').value;
+        let number2=document.getElementById('number2').value;
+        let nu1TInt=parseFloat(number1);
+        let nu2TInt=parseFloat(number2);
+        let result=nu1TInt*nu2TInt;
+        document.write(result)
+    }
+    function dodiv(){ 
+        let number1=document.getElementById('number1').value;
+        let number2=document.getElementById('number2').value;
+        let nu1TInt=parseFloat(number1);
+        let nu2TInt=parseFloat(number2);
+        let result=nu1TInt/nu2TInt;
+        document.write(result)
+    }
     </script>
-
 </body>
 </html>

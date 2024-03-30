@@ -7,13 +7,14 @@
 </head>
 <body>
     <script>
-        let userInput=prompt("enter number")  
-       let factorial=1;
-       for(i=userInput;i>=1;i--){
-        factorial*=i
+        let usreinput=prompt("enter number");
+        if(usreinput%2==0){
+            document.write("it is Evel number")
 
-       }
-       document.write(factorial)
+        }
+        else{
+            document.write("it is odd number")
+        }
 
     </script>
 </body>
