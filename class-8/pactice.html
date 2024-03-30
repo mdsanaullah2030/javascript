@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-   <script>
-    let nyAr=[20,40,30,50,80]
-  for(let first=0; first<myar.le ){
+    <script>
+        let myAr = [5,4,3,7,2,1,6,10,9,8]
+        document.write("old"+myAr)
+        for (let first = 0; first<myAr.length; first++) {
+            for (let second=0;second<myAr.length-first-1;second++){
+                if(myAr[second]>myAr[second+1]){
+                    let temp=myAr[second]
+                    myAr[second]=myAr[second+1]
+                    myAr[second+1]=temp
+                    
+                }
 
-  }
 
-    
-   </script> 
+            }
+        }
+        document.write( "new<br>" + myAr )
+    </script>
 </body>
+
 </html>

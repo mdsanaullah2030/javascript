@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Grade
+    <input type="text" id="mark"><br>
+    <input type="submit" value="checke" onclick="findResult()"><br>
+    <p id="resulte"></p>
+    <script>
+        function findResult(){
+            let usrinput=document.getElementById('mark').value;
+            let grade=""
+            if(usrinput<=32){
+                grade="F"
+
+            }
+            else if(usrinput<=39){
+                grade="D"
+
+            }
+            document.getElementById('resulte').innerHTML=grade
+        } 
+        // document.write("grade")
+       
+    </script>
+</body>
+</html>
